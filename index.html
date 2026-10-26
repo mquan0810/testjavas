@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore six striking nature scenes in an accessible, interactive photo gallery. Navigate with a mouse or keyboard.">
+  <title>Wild Horizons | Accessible Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#main-content" aria-label="Wild Horizons, back to main content">
+        <span class="brand__mark" aria-hidden="true">✦</span>
+        <span>WILD HORIZONS</span>
+      </a>
+      <span class="site-header__edition">A PHOTO STORY · NO. 01</span>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-wrap">
+    <header class="introduction">
+      <p class="eyebrow">THE BEAUTY OF THE NATURAL WORLD</p>
+      <h1>Places worth <em>pausing</em> for.</h1>
+      <p class="intro-text">Six moments of wonder, from alpine lakes to desert light. Move your mouse over a photo or use the Tab key to explore the collection.</p>
+    </header>
+
+    <section class="featured" aria-labelledby="featured-heading">
+      <div class="featured__image-wrap">
+        <img id="featured-image"
+             src="images/alpine-lake.jpg"
+             alt="Turquoise alpine lake surrounded by evergreen trees and snow-covered mountain peaks"
+             width="512" height="512">
+        <span class="featured__tag" aria-hidden="true">SELECTED VIEW</span>
+      </div>
+      <div class="featured__information">
+        <p class="featured__label">IN FOCUS <span id="featured-counter">01 / 06</span></p>
+        <h2 id="featured-heading">Alpine Serenity</h2>
+        <p id="featured-description">A tranquil turquoise lake reflects the snowy peaks rising above a green mountain valley.</p>
+        <div class="featured__rule" aria-hidden="true"></div>
+        <p class="featured__tip"><span aria-hidden="true">↗</span> Explore the six images below</p>
+        <p id="gallery-status" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true">Now viewing Alpine Serenity.</p>
+      </div>
+    </section>
+
+    <section class="collection" aria-labelledby="collection-heading">
+      <div class="collection__heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2 id="collection-heading">A world in six frames</h2>
+        </div>
+        <p id="gallery-instructions" class="collection__hint">Hover with a mouse, or press <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> to preview each photo.</p>
+      </div>
+
+      <div id="gallery" class="gallery-grid" aria-describedby="gallery-instructions">
+        <figure class="gallery-card is-active" data-number="01" data-description="A tranquil turquoise lake reflects the snowy peaks rising above a green mountain valley.">
+          <img src="images/alpine-lake.jpg" alt="Turquoise alpine lake surrounded by evergreen trees and snow-covered mountain peaks" width="512" height="512">
+          <figcaption><span class="gallery-card__number" aria-hidden="true">01</span><span class="gallery-card__title">Alpine Serenity</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-number="02" data-description="Golden sunlight filters through towering pine trees onto a quiet woodland path.">
+          <img src="images/sunlit-forest.jpg" alt="Golden rays of sunlight illuminating a narrow path through tall pine trees" width="512" height="512">
+          <figcaption><span class="gallery-card__number" aria-hidden="true">02</span><span class="gallery-card__title">Forest Light</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-number="03" data-description="Gentle waves reach white sand beside clear blue water and tropical palms.">
+          <img src="images/tropical-beach.jpg" alt="White sandy beach with turquoise waves, rocky headland and palm trees" width="512" height="512">
+          <figcaption><span class="gallery-card__number" aria-hidden="true">03</span><span class="gallery-card__title">Ocean Breeze</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-number="04" data-description="A warm orange sunset traces the sculpted ridges of an endless dune landscape.">
+          <img src="images/desert-dunes.jpg" alt="Rolling orange sand dunes glowing under a golden sunset sky" width="512" height="512">
+          <figcaption><span class="gallery-card__number" aria-hidden="true">04</span><span class="gallery-card__title">Desert Glow</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-number="05" data-description="White streams of water fall from a green cliff into a clear, blue-green pool.">
+          <img src="images/green-waterfall.jpg" alt="Wide waterfall cascading between green cliffs into a turquoise pool" width="512" height="512">
+          <figcaption><span class="gallery-card__number" aria-hidden="true">05</span><span class="gallery-card__title">Falling Water</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-number="06" data-description="Rows of blooming lavender stretch toward a distant farmhouse in the pink evening light.">
+          <img src="images/lavender-fields.jpg" alt="Purple lavender rows leading to a hilltop farmhouse beneath a pink sunset sky" width="512" height="512">
+          <figcaption><span class="gallery-card__number" aria-hidden="true">06</span><span class="gallery-card__title">Lavender Dusk</span></figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span>WILD HORIZONS · INTERACTIVE PHOTO GALLERY</span>
+      <span>Built for mouse and keyboard access</span>
+    </div>
+  </footer>
+</body>
+</html>
